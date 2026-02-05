@@ -7,7 +7,17 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Montserrat', sans-serif; color: #444; line-height: 1.6; background-color: var(--white); }
+
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    color: #444; 
+    line-height: 1.6;
+    
+    /* INI KUNCI BACKGROUND LOVE-LOVE NYA */
+    background-color: #fff9fb; /* Warna dasar pink sangat muda */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 20 20'%3E%3Cpath d='M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z' fill='%23f8bbd0' fill-opacity='0.3'/%3E%3C/svg%3E");
+    background-attachment: fixed; /* Supaya motif hatinya tetap diam pas di-scroll */
+}
 
 /* Typography */
 h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--maroon); text-align: center; }
@@ -16,60 +26,82 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--maroon); text-
 .music-container { position: fixed; top: 20px; right: 20px; z-index: 1000; }
 .music-btn { background: var(--maroon); color: white; border: none; padding: 10px 18px; border-radius: 25px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
 
-/* Hero Section (Hanya di sini latar belakang motifnya) */
+/* Hero Section */
 .hero { 
     height: 100vh; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    text-align: center; 
-    /* Latar belakang romantis hanya untuk bagian atas */
-    background: linear-gradient(rgba(252, 228, 236, 0.7), rgba(252, 228, 236, 0.7)), 
-                url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=1470') center/cover;
+    text-align: center;
+    background: linear-gradient(rgba(252, 228, 236, 0.4), rgba(252, 228, 236, 0.4));
 }
 .profile-img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 20px; }
-.hero h1 { font-size: 3.5rem; }
-.subtitle { font-style: italic; color: var(--maroon); }
+.hero h1 { font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.05); }
+.subtitle { font-style: italic; color: var(--maroon); font-weight: 500; }
 .scroll-down { display: block; margin-top: 20px; text-decoration: none; color: var(--maroon); font-size: 2rem; animation: bounce 2s infinite; }
 
 /* Sections */
 .section { padding: 100px 0; }
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 .section-title { font-size: 2.5rem; margin-bottom: 50px; }
-.section-title::after { content: '❤️'; display: block; font-size: 1rem; margin-top: 10px; }
+.section-title::after { content: '❤️'; display: block; font-size: 1.2rem; margin-top: 10px; }
 
 /* Halaman 2: Bubbles */
 .bubble-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
-.bubble { background: #fff9fb; padding: 30px; border-radius: 50%; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 2px solid var(--soft-pink); transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-.bubble:hover { transform: scale(1.1); border-color: var(--maroon); }
+.bubble { 
+    background: rgba(255, 255, 255, 0.9); /* Sedikit transparan agar background love ngintip dikit */
+    padding: 30px; 
+    border-radius: 50%; 
+    aspect-ratio: 1/1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border: 3px solid var(--soft-pink); 
+    transition: 0.3s; 
+    box-shadow: 0 8px 20px rgba(136, 14, 79, 0.1); 
+    text-align: center;
+}
+.bubble:hover { transform: scale(1.1); border-color: var(--maroon); background: white; }
+.bubble h3 { font-size: 1.1rem; margin-bottom: 5px; }
+.bubble p { font-size: 0.8rem; color: #666; font-weight: 500; }
 
 /* Halaman 3: Frames */
-.frame-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-.photo-frame { background: white; padding: 15px 15px 30px 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: rotate(-2deg); transition: 0.3s; text-align: center; }
+.frame-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; }
+.photo-frame { 
+    background: white; 
+    padding: 15px 15px 35px 15px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+    transform: rotate(-2deg); 
+    transition: 0.3s; 
+    text-align: center; 
+}
 .photo-frame:nth-child(even) { transform: rotate(2deg); }
-.photo-frame:hover { transform: rotate(0) scale(1.05); }
-.photo-frame img { width: 100%; height: 180px; object-fit: cover; }
-.caption { margin-top: 10px; font-weight: bold; color: var(--maroon); }
+.photo-frame:hover { transform: rotate(0) scale(1.05); z-index: 10; }
+.photo-frame img { width: 100%; height: 180px; object-fit: cover; border: 1px solid #eee; }
+.caption { margin-top: 12px; font-weight: bold; color: var(--maroon); font-family: 'Playfair Display', serif; }
 
-/* Halaman 4: Rounded Rectangle Buttons */
+/* Halaman 4: Rounded Rectangle Buttons (Galeri Momen) */
 .moment-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .moment-btn { 
     background: var(--maroon); 
     color: white; 
     text-decoration: none; 
-    padding: 15px 35px; 
-    border-radius: 12px; 
+    padding: 20px 40px; 
+    border-radius: 15px; 
     font-weight: 600; 
+    font-size: 1.2rem; 
     transition: 0.3s; 
-    min-width: 180px; 
-    text-align: center; 
+    box-shadow: 0 5px 15px rgba(136, 14, 79, 0.3);
+    min-width: 220px;
+    text-align: center;
 }
-.moment-btn:hover { background: var(--deep-maroon); transform: translateY(-3px); }
+.moment-btn:hover { background: var(--deep-maroon); transform: translateY(-5px); }
 
 /* Footer */
-footer { padding: 50px; text-align: center; font-size: 0.8rem; color: #888; }
+footer { padding: 60px; text-align: center; font-size: 0.9rem; color: var(--maroon); font-weight: 600; }
 
 /* Animations */
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} }
 .fade-in { animation: fadeIn 1.5s ease-in; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
