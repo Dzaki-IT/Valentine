@@ -1,0 +1,167 @@
+/* Variabel Warna */
+:root {
+    --soft-pink: #fce4ec;
+    --maroon: #880e4f;
+    --deep-maroon: #560027;
+    --white: #ffffff;
+    --text-color: #444;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.bg-light { background-color: var(--soft-pink); }
+.bg-soft { background-color: #fff9fb; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.text-center { text-align: center; }
+
+/* Judul */
+h1, h2, .story-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--maroon);
+}
+
+/* Music Control */
+.music-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.music-btn {
+    background: var(--maroon);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.music-btn:hover { background: var(--deep-maroon); }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(252, 228, 236, 0.8), rgba(252, 228, 236, 0.8)), 
+                url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=1470') center/cover;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--white);
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero h1 { font-size: 4rem; margin-bottom: 10px; }
+.subtitle { font-style: italic; font-size: 1.2rem; color: var(--maroon); }
+
+.scroll-down {
+    display: block;
+    margin-top: 30px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--maroon);
+    animation: bounce 2s infinite;
+}
+
+/* Sections */
+.section { padding: 80px 0; text-align: center; }
+.section-title { font-size: 2.5rem; margin-bottom: 40px; position: relative; }
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--maroon);
+    margin: 10px auto;
+}
+
+.about-text { max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img { transform: scale(1.03); }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary { background: var(--maroon); color: white; }
+.btn-primary:hover { background: var(--deep-maroon); transform: translateY(-3px); }
+.btn-secondary { border: 2px solid var(--maroon); color: var(--maroon); }
+.btn-secondary:hover { background: var(--maroon); color: white; }
+
+/* Story Page */
+.story-container { padding: 100px 20px; max-width: 800px; }
+.story-title { font-size: 3rem; margin-bottom: 40px; text-align: center; }
+.story-content p { margin-bottom: 25px; font-size: 1.2rem; text-align: justify; }
+
+/* Animations */
+.fade-in { animation: fadeIn 1.5s ease-in; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* Footer */
+footer { padding: 40px 0; text-align: center; background: #333; color: white; font-size: 0.8rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .section-title { font-size: 2rem; }
+}
