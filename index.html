@@ -31,62 +31,46 @@
         <div class="container">
             <h2 class="section-title">Who is Mulan?</h2>
             <div class="bubble-grid">
-                <div class="bubble">
+                <div class="bubble" onclick="openPopup('cantik')">
                     <h3>CANTIK</h3>
-                    <p>Pesona dari hati.</p>
+                    <p>Klik untuk Mulan</p>
                 </div>
-                <div class="bubble">
+                <div class="bubble" onclick="openPopup('pinter')">
                     <h3>PINTER</h3>
-                    <p>Bijak melangkah.</p>
+                    <p>Klik untuk Mulan</p>
                 </div>
-                <div class="bubble">
+                <div class="bubble" onclick="openPopup('gemesin')">
                     <h3>GEMESIN</h3>
-                    <p>Unik & ceria.</p>
+                    <p>Klik untuk Mulan</p>
                 </div>
-                <div class="bubble">
+                <div class="bubble" onclick="openPopup('independent')">
                     <h3>INDEPENDENT</h3>
-                    <p>Wanita kuat.</p>
+                    <p>Klik untuk Mulan</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
     <section id="favorit" class="section">
         <div class="container">
             <h2 class="section-title">Mulan's Favorites</h2>
             <div class="frame-container">
-                <div class="photo-frame">
-                    <img src="dzaki.jpg" alt="Dzaki">
-                    <p class="caption">Dzaki</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="hongtang.jpg" alt="Hong Tang">
-                    <p class="caption">Hong Tang</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="horror.jpg" alt="Horror Movie">
-                    <p class="caption">Horror Movie</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="money.jpg" alt="Money">
-                    <p class="caption">Money</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="travel.jpg" alt="Travelling">
-                    <p class="caption">Travelling</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="mercy.jpg" alt="Mercy G Class">
-                    <p class="caption">Mercy G Class</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="donut.jpg" alt="Landmark Donut">
-                    <p class="caption">Landmark Donut</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="baking.jpg" alt="Baking">
-                    <p class="caption">Baking</p>
-                </div>
+                <div class="photo-frame"><img src="dzaki.jpg" alt="Dzaki"><p class="caption">Dzaki</p></div>
+                <div class="photo-frame"><img src="hongtang.jpg" alt="Hong Tang"><p class="caption">Hong Tang</p></div>
+                <div class="photo-frame"><img src="horror.jpg" alt="Horror Movie"><p class="caption">Horror Movie</p></div>
+                <div class="photo-frame"><img src="money.jpg" alt="Money"><p class="caption">Money</p></div>
+                <div class="photo-frame"><img src="travel.jpg" alt="Travelling"><p class="caption">Travelling</p></div>
+                <div class="photo-frame"><img src="mercy.jpg" alt="Mercy G Class"><p class="caption">Mercy G Class</p></div>
+                <div class="photo-frame"><img src="donut.jpg" alt="Landmark Donut"><p class="caption">Landmark Donut</p></div>
+                <div class="photo-frame"><img src="baking.jpg" alt="Baking"><p class="caption">Baking</p></div>
             </div>
         </div>
     </section>
@@ -95,28 +79,18 @@
         <div class="container">
             <h2 class="section-title">Galeri Momen</h2>
             <div class="moment-grid">
-                
                 <div class="moment-item">
-                    <div class="moment-bubble">
-                        <img src="thumb-roblox.jpg" alt="Roblox">
-                    </div>
+                    <div class="moment-bubble"><img src="thumb-roblox.jpg" alt="Roblox"></div>
                     <a href="roblox.html" class="moment-btn">Roblox</a>
                 </div>
-
                 <div class="moment-item">
-                    <div class="moment-bubble">
-                        <img src="thumb-gemoy.jpg" alt="Pap Gemoy">
-                    </div>
+                    <div class="moment-bubble"><img src="thumb-gemoy.jpg" alt="Pap Gemoy"></div>
                     <a href="pap-gemoy.html" class="moment-btn">Pap Gemoy</a>
                 </div>
-
                 <div class="moment-item">
-                    <div class="moment-bubble">
-                        <img src="thumb-movies.jpg" alt="Movies">
-                    </div>
+                    <div class="moment-bubble"><img src="thumb-movies.jpg" alt="Movies"></div>
                     <a href="movies.html" class="moment-btn">Movies</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -125,15 +99,9 @@
         <div class="container text-center">
             <h2 class="section-title" style="color: white;">Find Mulan on</h2>
             <div class="social-links">
-                <a href="#" target="_blank" class="social-icon ig" title="Instagram">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-                </a>
-                <a href="#" target="_blank" class="social-icon tiktok" title="TikTok">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
-                </a>
-                <a href="#" target="_blank" class="social-icon spotify" title="Spotify">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify">
-                </a>
+                <a href="#" target="_blank" class="social-icon ig"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+                <a href="#" target="_blank" class="social-icon tiktok"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
+                <a href="#" target="_blank" class="social-icon spotify"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png"></a>
             </div>
         </div>
     </section>
