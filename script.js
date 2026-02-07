@@ -18,6 +18,14 @@ const kataMulan = {
     mercy: { title: "Mercy G Class", text: "Mobil impian Mulan, semoga segera terwujud!" },
     donut: { title: "Donut", text: "Donut paling enak sejagat raya!" },
     baking: { title: "Baking", text: "Kue bikinan Mulan selalu yang termanis." }
+    movie1: { 
+        title: "Dilan 1990", 
+        text: "Film ini ngingetin aku sama awal kita kenal, manis banget!" 
+    },
+    movie2: { 
+        title: "The Conjuring", 
+        text: "Nanti kita nonton ini ya, aku janji bakal jagain kamu pas setannya muncul." 
+    }
 };
 
 function openPopup(key) {
@@ -46,3 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
