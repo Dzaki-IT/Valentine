@@ -3,34 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mulan's Movie Night</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Mulan's Movie Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="fade-in">
+<body>
 
-    <div class="container section">
-        <h1 class="section-title">Movie Time</h1>
-        
-        <div class="frame-container">
-            <div class="photo-frame">
-                <img src="movie1.jpg" alt="Movie 1">
-                <p class="caption">Horror Night 👻</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">51 Momen Film Mulan</h2>
+            
+            <div style="text-align: center; margin-bottom: 50px;">
+                <a href="index.html" class="moment-btn" style="padding: 15px 40px; text-decoration: none;">← Back to Home</a>
             </div>
-            <div class="photo-frame">
-                <img src="movie2.jpg" alt="Movie 2">
-                <p class="caption">Favorite Series</p>
-            </div>
-            <div class="photo-frame">
-                <img src="movie3.jpg" alt="Movie 3">
-                <p class="caption">Cinema Date</p>
+
+            <div class="frame-container">
+                <div class="photo-frame" onclick="openPopup('movie1')"><img src="movies1.jpg" alt="Movie 1"><p class="caption">Movie 1</p></div>
+                <div class="photo-frame" onclick="openPopup('movie2')"><img src="movies2.jpg" alt="Movie 2"><p class="caption">Movie 2</p></div>
+                <div class="photo-frame" onclick="openPopup('movie3')"><img src="movies3.jpg" alt="Movie 3"><p class="caption">Movie 3</p></div>
+                <div class="photo-frame" onclick="openPopup('movie4')"><img src="movies4.jpg" alt="Movie 4"><p class="caption">Movie 4</p></div>
+                <div class="photo-frame" onclick="openPopup('movie5')"><img src="movies5.jpg" alt="Movie 5"><p class="caption">Movie 5</p></div>
+                <div class="photo-frame" onclick="openPopup('movie6')"><img src="movies6.jpg" alt="Movie 6"><p class="caption">Movie 6</p></div>
+                <div class="photo-frame" onclick="openPopup('movie7')"><img src="movies7.jpg" alt="Movie 7"><p class="caption">Movie 7</p></div>
+                <div class="photo-frame" onclick="openPopup('movie8')"><img src="movies8.jpg" alt="Movie 8"><p class="caption">Movie 8</p></div>
+                <div class="photo-frame" onclick="openPopup('movie9')"><img src="movies9.jpg" alt="Movie 9"><p class="caption">Movie 9</p></div>
+                <div class="photo-frame" onclick="openPopup('movie10')"><img src="movies10.jpg" alt="Movie 10"><p class="caption">Movie 10</p></div>
+                <div class="photo-frame" onclick="openPopup('movie11')"><img src="movies11.jpg" alt="Movie 11"><p class="caption">Movie 11</p></div>
+                <div class="photo-frame" onclick="openPopup('movie12')"><img src="movies12.jpg" alt="Movie 12"><p class="caption">Movie 12</p></div>
+                <div class="photo-frame" onclick="openPopup('movie13')"><img src="movies13.jpg" alt="Movie 13"><p class="caption">Movie 13</p></div>
+                <div class="photo-frame" onclick="openPopup('movie14')"><img src="movies14.jpg" alt="Movie 14"><p class="caption">Movie 14</p></div>
+                <div class="photo-frame" onclick="openPopup('movie15')"><img src="movies15.jpg" alt="Movie 15"><p class="caption">Movie 15</p></div>
+                <div class="photo-frame" onclick="openPopup('movie16')"><img src="movies16.jpg" alt="Movie 16"><p class="caption">Movie 16</p></div>
+                <div class="photo-frame" onclick="openPopup('movie17')"><img src="movies17.jpg" alt="Movie 17"><p class="caption">Movie 17</p></div>
+                <div class="photo-frame" onclick="openPopup('movie18')"><img src="movies18.jpg" alt="Movie 18"><p class="caption">Movie 18</p></div>
+                <div class="photo-frame" onclick="openPopup('movie19')"><img src="movies19.jpg" alt="Movie 19"><p class="caption">Movie 19</p></div>
+                <div class="photo-frame" onclick="openPopup('movie20')"><img src="movies20.jpg" alt="Movie 20"><p class="caption">Movie 20</p></div>
+                <div class="photo-frame" onclick="openPopup('movie21')"><img src="movies21.jpg" alt="Movie 21"><p class="caption">Movie 21</p></div>
+                <div class="photo-frame" onclick="openPopup('movie22')"><img src="movies22.jpg" alt="Movie 22"><p class="caption">Movie 22</p></div>
+                <div class="photo-frame" onclick="openPopup('movie23')"><img src="movies23.jpg" alt="Movie 23"><p class="caption">Movie 23</p></div>
+                <div class="photo-frame" onclick="openPopup('movie24')"><img src="movies24.jpg" alt="Movie 24"><p class="caption">Movie 24</p></div>
+                <div class="photo-frame" onclick="openPopup('movie25')"><img src="movies25.jpg" alt="Movie 25"><p class="caption">Movie 25</p></div>
+                <div class="photo-frame" onclick="openPopup('movie26')"><img src="movies26.jpg" alt="Movie 26"><p class="caption">Movie 26</p></div>
+                <div class="photo-frame" onclick="openPopup('movie27')"><img src="movies27.jpg" alt="Movie 27"><p class="caption">Movie 27</p></div>
+                <div class="photo-frame" onclick="openPopup('movie28')"><img src="movies28.jpg" alt="Movie 28"><p class="caption">Movie 28</p></div>
+                <div class="photo-frame" onclick="openPopup('movie29')"><img src="movies29.jpg" alt="Movie 29"><p class="caption">Movie 29</p></div>
+                <div class="photo-frame" onclick="openPopup('movie30')"><img src="movies30.jpg" alt="Movie 30"><p class="caption">Movie 30</p></div>
+                <div class="photo-frame" onclick="openPopup('movie31')"><img src="movies31.jpg" alt="Movie 31"><p class="caption">Movie 31</p></div>
+                <div class="photo-frame" onclick="openPopup('movie32')"><img src="movies32.jpg" alt="Movie 32"><p class="caption">Movie 32</p></div>
+                <div class="photo-frame" onclick="openPopup('movie33')"><img src="movies33.jpg" alt="Movie 33"><p class="caption">Movie 33</p></div>
+                <div class="photo-frame" onclick="openPopup('movie34')"><img src="movies34.jpg" alt="Movie 34"><p class="caption">Movie 34</p></div>
+                <div class="photo-frame" onclick="openPopup('movie35')"><img src="movies35.jpg" alt="Movie 35"><p class="caption">Movie 35</p></div>
+                <div class="photo-frame" onclick="openPopup('movie36')"><img src="movies36.jpg" alt="Movie 36"><p class="caption">Movie 36</p></div>
+                <div class="photo-frame" onclick="openPopup('movie37')"><img src="movies37.jpg" alt="Movie 37"><p class="caption">Movie 37</p></div>
+                <div class="photo-frame" onclick="openPopup('movie38')"><img src="movies38.jpg" alt="Movie 38"><p class="caption">Movie 38</p></div>
+                <div class="photo-frame" onclick="openPopup('movie39')"><img src="movies39.jpg" alt="Movie 39"><p class="caption">Movie 39</p></div>
+                <div class="photo-frame" onclick="openPopup('movie40')"><img src="movies40.jpg" alt="Movie 40"><p class="caption">Movie 40</p></div>
+                <div class="photo-frame" onclick="openPopup('movie41')"><img src="movies41.jpg" alt="Movie 41"><p class="caption">Movie 41</p></div>
+                <div class="photo-frame" onclick="openPopup('movie42')"><img src="movies42.jpg" alt="Movie 42"><p class="caption">Movie 42</p></div>
+                <div class="photo-frame" onclick="openPopup('movie43')"><img src="movies43.jpg" alt="Movie 43"><p class="caption">Movie 43</p></div>
+                <div class="photo-frame" onclick="openPopup('movie44')"><img src="movies44.jpg" alt="Movie 44"><p class="caption">Movie 44</p></div>
+                <div class="photo-frame" onclick="openPopup('movie45')"><img src="movies45.jpg" alt="Movie 45"><p class="caption">Movie 45</p></div>
+                <div class="photo-frame" onclick="openPopup('movie46')"><img src="movies46.jpg" alt="Movie 46"><p class="caption">Movie 46</p></div>
+                <div class="photo-frame" onclick="openPopup('movie47')"><img src="movies47.jpg" alt="Movie 47"><p class="caption">Movie 47</p></div>
+                <div class="photo-frame" onclick="openPopup('movie48')"><img src="movies48.jpg" alt="Movie 48"><p class="caption">Movie 48</p></div>
+                <div class="photo-frame" onclick="openPopup('movie49')"><img src="movies49.jpg" alt="Movie 49"><p class="caption">Movie 49</p></div>
+                <div class="photo-frame" onclick="openPopup('movie50')"><img src="movies50.jpg" alt="Movie 50"><p class="caption">Movie 50</p></div>
+                <div class="photo-frame" onclick="openPopup('movie51')"><img src="movies51.jpg" alt="Movie 51"><p class="caption">Movie 51</p></div>
             </div>
         </div>
+    </section>
 
-        <div class="text-center" style="margin-top: 60px;">
-            <a href="index.html" class="moment-btn" style="text-decoration: none;">← Kembali ke Profil</a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
