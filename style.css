@@ -118,5 +118,25 @@ footer { padding: 80px; text-align: center; color: white; font-weight: 600; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 .fade-in { animation: fadeIn 2s ease-out; }
 .scroll-down { font-size: 3rem; color: white; text-decoration: none; animation: bounce 2s infinite; display: block; text-align: center; }
+
+.trailer-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff0000; /* Merah YouTube */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.trailer-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
 @keyframes bounce { 0%, 100% {transform: translateY(0);} 50% {transform: translateY(-15px);} }
+
 
