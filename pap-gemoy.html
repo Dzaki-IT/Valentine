@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pap Gemoy Mulan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Mulan's Video Gemoy Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="fade-in">
+<body>
 
-    <div class="container section">
-        <h1 class="section-title">Pap Gemoy</h1>
-        
-        <div class="frame-container">
-            <div class="photo-frame">
-                <img src="gemoy1.jpg" alt="Pap 1">
-                <p class="caption">Senyum Pagi ✨</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">20 Momen Video Gemoy Mulan</h2>
+            
+            <div style="text-align: center; margin-bottom: 50px;">
+                <a href="index.html" class="moment-btn" style="padding: 15px 40px; text-decoration: none;">← Back to Home</a>
             </div>
-            <div class="photo-frame">
-                <img src="gemoy2.jpg" alt="Pap 2">
-                <p class="caption">Mood Hari Ini 🌸</p>
-            </div>
-            <div class="photo-frame">
-                <img src="gemoy3.jpg" alt="Pap 3">
-                <p class="caption">Stay Cute!</p>
+
+            <div class="frame-container">
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy1')"><img src="gemoy_thumb1.jpg" alt="Pap Gemoy 1"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy2')"><img src="gemoy_thumb2.jpg" alt="Pap Gemoy 2"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy3')"><img src="gemoy_thumb3.jpg" alt="Pap Gemoy 3"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy4')"><img src="gemoy_thumb4.jpg" alt="Pap Gemoy 4"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy5')"><img src="gemoy_thumb5.jpg" alt="Pap Gemoy 5"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy6')"><img src="gemoy_thumb6.jpg" alt="Pap Gemoy 6"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy7')"><img src="gemoy_thumb7.jpg" alt="Pap Gemoy 7"><p class="caption"></p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy8')"><img src="gemoy_thumb8.jpg" alt="Pap Gemoy 8"><p class="caption">Pap Gemoy 8</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy9')"><img src="gemoy_thumb9.jpg" alt="Pap Gemoy 9"><p class="caption">Pap Gemoy 9</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy10')"><img src="gemoy_thumb10.jpg" alt="Pap Gemoy 10"><p class="caption">Pap Gemoy 10</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy11')"><img src="gemoy_thumb11.jpg" alt="Pap Gemoy 11"><p class="caption">Pap Gemoy 11</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy12')"><img src="gemoy_thumb12.jpg" alt="Pap Gemoy 12"><p class="caption">Pap Gemoy 12</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy13')"><img src="gemoy_thumb13.jpg" alt="Pap Gemoy 13"><p class="caption">Pap Gemoy 13</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy14')"><img src="gemoy_thumb14.jpg" alt="Pap Gemoy 14"><p class="caption">Pap Gemoy 14</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy15')"><img src="gemoy_thumb15.jpg" alt="Pap Gemoy 15"><p class="caption">Pap Gemoy 15</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy16')"><img src="gemoy_thumb16.jpg" alt="Pap Gemoy 16"><p class="caption">Pap Gemoy 16</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy17')"><img src="gemoy_thumb17.jpg" alt="Pap Gemoy 17"><p class="caption">Pap Gemoy 17</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy18')"><img src="gemoy_thumb18.jpg" alt="Pap Gemoy 18"><p class="caption">Pap Gemoy 18</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy19')"><img src="gemoy_thumb19.jpg" alt="Pap Gemoy 19"><p class="caption">Pap Gemoy 19</p></div>
+                <div class="photo-frame" onclick="openGemoyPopup('gemoy20')"><img src="gemoy_thumb20.jpg" alt="Pap Gemoy 20"><p class="caption">Pap Gemoy 20</p></div>
             </div>
         </div>
+    </section>
 
-        <div class="text-center" style="margin-top: 60px;">
-            <a href="index.html" class="moment-btn" style="text-decoration: none;">← Kembali ke Profil</a>
+    <div id="gemoyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGemoyPopup()">×</span>
+            <div id="gemoy-video-container">
+                </div>
+            <p id="gemoy-popup-text"></p>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
