@@ -139,4 +139,30 @@ footer { padding: 80px; text-align: center; color: white; font-weight: 600; }
 }
 @keyframes bounce { 0%, 100% {transform: translateY(0);} 50% {transform: translateY(-15px);} }
 
+#gemoy-video-container {
+    width: 100%; /* Lebar container video */
+    max-width: 500px; /* Batas maksimal lebar video */
+    margin: 15px auto; /* Tengahin video */
+    background-color: black; /* Background hitam biar video lebih jelas */
+    border-radius: 10px;
+    overflow: hidden; /* Pastikan video tidak keluar dari batas */
+}
+
+#gemoy-video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px; /* Batas tinggi video */
+    object-fit: contain; /* Agar video tidak terpotong */
+}
+
+#gemoy-popup-text {
+    font-size: 1.1rem;
+    color: var(--dark-rose);
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
 
