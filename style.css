@@ -139,30 +139,34 @@ footer { padding: 80px; text-align: center; color: white; font-weight: 600; }
 }
 @keyframes bounce { 0%, 100% {transform: translateY(0);} 50% {transform: translateY(-15px);} }
 
+/* Container Video Portrait */
 #gemoy-video-container {
-    width: 100%; /* Lebar container video */
-    max-width: 500px; /* Batas maksimal lebar video */
-    margin: 15px auto; /* Tengahin video */
-    background-color: black; /* Background hitam biar video lebih jelas */
-    border-radius: 10px;
-    overflow: hidden; /* Pastikan video tidak keluar dari batas */
+    width: 100%;
+    max-width: 320px; /* Dipersempit agar pas dengan rasio portrait */
+    margin: 15px auto;
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid var(--deep-pink); /* Tambahin border biar manis */
 }
 
 #gemoy-video-container video {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 400px; /* Batas tinggi video */
-    object-fit: contain; /* Agar video tidak terpotong */
+    max-height: 70vh; /* Agar video tidak melebihi tinggi layar HP/Laptop */
+    object-fit: cover; /* Memastikan video memenuhi kotak tanpa hitam-hitam di pinggir */
 }
 
 #gemoy-popup-text {
-    font-size: 1.1rem;
-    color: var(--dark-rose);
-    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--maroon);
+    margin: 15px 0 5px 0;
     text-align: center;
-    font-weight: 500;
+    font-style: italic;
+    font-weight: 600;
 }
-
 
 
