@@ -169,5 +169,25 @@ footer { padding: 80px; text-align: center; color: white; font-weight: 600; }
     font-weight: 600;
 }
 
+.letter-icon {
+    background: white; /* Warna dasar icon */
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--deep-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter-icon:hover {
+    transform: translateY(-10px) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
+    background: var(--soft-pink);
+}
+
+.letter-icon img {
+    width: 60%; /* Ukuran gambar surat di dalam lingkaran */
+    height: auto;
+}
 
 
