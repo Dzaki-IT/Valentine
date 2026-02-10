@@ -125,7 +125,7 @@ function openPopup(key) {
             }
         }
         
-        modal.style.display = "flex";
+        modal.style.display = "block";
     }
 }
 
@@ -192,4 +192,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
