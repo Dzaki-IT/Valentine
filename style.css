@@ -1,13 +1,26 @@
-/* Mengubah kursor standar menjadi emoji Love */
+/* 1. Kursor Standar untuk Seluruh Halaman */
 html, body {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:24px'><text y='50%'>❤️</text></svg>"), auto;
-    /* Memastikan kursor tetap ada meski di-scroll */
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:24px'><text y='50%'>❤️</text></svg>"), auto !important;
     min-height: 100vh;
 }
 
-/* Mengubah kursor saat diarahkan ke link, tombol, atau elemen yang bisa diklik */
-a, button, .bubble, .photo-frame, .moment-bubble, .moment-btn, .close-btn {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:24px'><text y='50%'>💖</text></svg>"), pointer;
+/* 2. Kursor Berdetak (💖) untuk SEMUA elemen yang bisa diklik */
+/* Kita tambahkan semua class yang kamu pakai: bubble, photo-frame, moment-item, dll */
+a, 
+button, 
+.bubble, 
+.bubble h3, 
+.bubble p,
+.photo-frame, 
+.photo-frame img,
+.photo-frame .caption,
+.moment-bubble, 
+.moment-item,
+.moment-btn, 
+.close-btn,
+.letter-icon,
+.social-icon {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:24px'><text y='50%'>💖</text></svg>"), pointer !important;
 }
 
 :root {
@@ -201,6 +214,7 @@ footer { padding: 80px; text-align: center; color: white; font-weight: 600; }
     width: 60%; /* Ukuran gambar surat di dalam lingkaran */
     height: auto;
 }
+
 
 
 
