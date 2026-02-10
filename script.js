@@ -104,6 +104,33 @@ const kataGemoy = {
     gemoy20: { text: "Love you more than anything.", video: "gemoy_video20.mp4" }
 };
 
+    // DATA ROBLOX (1 - 25)
+    roblox1: { title: "Roblox 1", text: "Momen seru pas main bareng Mulan!", link: "" },
+    roblox2: { title: "Roblox 2", text: "Kenangan di map ini paling lucu.", link: "" },
+    roblox3: { title: "Roblox 3", text: "Deskripsi Roblox 3...", link: "" },
+    roblox4: { title: "Roblox 4", text: "Deskripsi Roblox 4...", link: "" },
+    roblox5: { title: "Roblox 5", text: "Deskripsi Roblox 5...", link: "" },
+    roblox6: { title: "Roblox 6", text: "Deskripsi Roblox 6...", link: "" },
+    roblox7: { title: "Roblox 7", text: "Deskripsi Roblox 7...", link: "" },
+    roblox8: { title: "Roblox 8", text: "Deskripsi Roblox 8...", link: "" },
+    roblox9: { title: "Roblox 9", text: "Deskripsi Roblox 9...", link: "" },
+    roblox10: { title: "Roblox 10", text: "Deskripsi Roblox 10...", link: "" },
+    roblox11: { title: "Roblox 11", text: "Deskripsi Roblox 11...", link: "" },
+    roblox12: { title: "Roblox 12", text: "Deskripsi Roblox 12...", link: "" },
+    roblox13: { title: "Roblox 13", text: "Deskripsi Roblox 13...", link: "" },
+    roblox14: { title: "Roblox 14", text: "Deskripsi Roblox 14...", link: "" },
+    roblox15: { title: "Roblox 15", text: "Deskripsi Roblox 15...", link: "" },
+    roblox16: { title: "Roblox 16", text: "Deskripsi Roblox 16...", link: "" },
+    roblox17: { title: "Roblox 17", text: "Deskripsi Roblox 17...", link: "" },
+    roblox18: { title: "Roblox 18", text: "Deskripsi Roblox 18...", link: "" },
+    roblox19: { title: "Roblox 19", text: "Deskripsi Roblox 19...", link: "" },
+    roblox20: { title: "Roblox 20", text: "Deskripsi Roblox 20...", link: "" },
+    roblox21: { title: "Roblox 21", text: "Deskripsi Roblox 21...", link: "" },
+    roblox22: { title: "Roblox 22", text: "Deskripsi Roblox 22...", link: "" },
+    roblox23: { title: "Roblox 23", text: "Deskripsi Roblox 23...", link: "" },
+    roblox24: { title: "Roblox 24", text: "Deskripsi Roblox 24...", link: "" },
+    roblox25: { title: "Roblox 25", text: "Kenangan terakhir di Roblox yang paling GG!", link: "" }
+
 // ==========================================
 // 4. LOGIKA POP-UP STANDAR (Main & Movies)
 // ==========================================
@@ -192,3 +219,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
