@@ -16,15 +16,29 @@
         <button id="musicToggle" class="music-btn">🎵 Play Music</button>
     </div>
 
-    <header class="hero fade-in">
-        <div class="hero-content">
-            <div class="profile-img-container">
+    <header class="hero fade-in" id="hero-section">
+        <div class="hero-content" id="hero-content">
+            <div class="profile-img-container" onclick="toggleBiodata()">
                 <img src="foto-profil.jpg" alt="Foto Mulan" class="profile-img">
             </div>
-            <h1>Mulan</h1>
-            <p class="subtitle">"A gentle soul with a beautiful heart"</p>
-            <a href="#kepribadian" class="scroll-down">↓</a>
+            <div class="hero-text-wrapper">
+                <div id="hero-main-titles">
+                    <h1>Mulan</h1>
+                    <p class="subtitle">"A gentle soul with a beautiful heart"</p>
+                </div>
+                <div id="mulan-biodata" class="hidden-biodata">
+                    <h2>About Mulan</h2>
+                    <ul class="bio-list">
+                        <li><strong>Nama:</strong> Mulan Agnesia</li>
+                        <li><strong>Hobi:</strong> Baking & Roblox</li>
+                        <li><strong>Favorite:</strong> Hong Tang</li>
+                        <li><strong>Dream:</strong> Mercy G-Class</li>
+                    </ul>
+                    <p class="bio-quote">"Tetap gemoy dan bahagia setiap hari!"</p>
+                </div>
+            </div>
         </div>
+        <a href="#kepribadian" class="scroll-down">↓</a>
     </header>
 
     <section id="kepribadian" class="section">
@@ -48,7 +62,7 @@
             <span class="close-btn" onclick="closePopup()">×</span>
             <h2 id="popup-title"></h2>
             <p id="popup-text"></p>
-            <a id="popup-link" href="#" target="_blank" class="trailer-btn">Nonton Trailer 🎬</a>
+            <a id="popup-link" href="#" target="_blank" class="trailer-btn">Lihat Selengkapnya 🎬</a>
         </div>
     </div>
 
@@ -62,7 +76,7 @@
                 <div class="photo-frame" onclick="openPopup('money')"><img src="money.jpg" alt="Money"><p class="caption">Money</p></div>
                 <div class="photo-frame" onclick="openPopup('travel')"><img src="travel.jpg" alt="Travel"><p class="caption">Travel</p></div>
                 <div class="photo-frame" onclick="openPopup('mercy')"><img src="mercy.jpg" alt="Mercy"><p class="caption">Mercy</p></div>
-                <div class="photo-frame" onclick="openPopup('donut')"><img src="donut.jpg" alt="Donut"><p class="caption">Durian</p></div>
+                <div class="photo-frame" onclick="openPopup('donut')"><img src="donut.jpg" alt="Donut"><p class="caption">Donut</p></div>
                 <div class="photo-frame" onclick="openPopup('baking')"><img src="baking.jpg" alt="Baking"><p class="caption">Baking</p></div>
             </div>
         </div>
@@ -87,6 +101,7 @@
             </div>
         </div>
     </section>
+
     <section id="love-letter" class="section">
         <div class="container">
             <h2 class="section-title">Love Letter</h2>
@@ -124,7 +139,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="section">
         <div class="container text-center">
             <h2 class="section-title" style="color: white;">Find Mulan on</h2>
@@ -140,6 +155,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
