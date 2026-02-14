@@ -3,21 +3,21 @@
 // ==========================================
 const kataMulan = {
     beautiful: { title: "Beautiful ❤️", text: "Kenapa beautiful? YA KARENA MULAN ITU EMANG SECANTIK ITU WOIII, semua orang yg papasan dijalan sama di apasti langsung jatuh cinta semua karena emang dis ecantik itu melebihi artis manapun, bahkan han so hee aja kalah cantik bruh" },
-    smart: { title: "Smart 🧠", text: "Kenapa dia smart? YA BAYANGIN AJA BRUH, dia selalu OSN dan selalu masuk tingkat provinsi, dan lagi dia utbk terus dapet di UNSRI im so proud, " },
-    adorable: { title: "Adorable 🎀", text: "Tingkahmu selalu sukses bikin hari-hari lebih ceria!" },
-    independent: { title: "Independent 💪", text: "Wanita hebat yang punya prinsip. Keren banget!" },
-    disciplined: { title: "Disciplined ⏳", text: "Kamu sangat menghargai waktu dan konsisten. Hebat!" },
-    thrifty: { title: "Thrifty 💰", text: "Bijak dalam mengelola apa yang kamu miliki untuk masa depan." },
-    kindhearted: { title: "Kindhearted ✨", text: "Kebaikan hatimu membuat orang di sekitarmu merasa nyaman." },
-    caring: { title: "Caring 🌸", text: "Kamu sangat perhatian dengan hal-hal kecil sekalipun." },
+    smart: { title: "Smart 🧠", text: "Kenapa dia smart? YA BAYANGIN AJA BRUH, dia selalu OSN dan selalu masuk tingkat provinsi, dan lagi dia utbk terus dapet di UNSRI im very proud of her " },
+    adorable: { title: "Adorable 🎀", text: "Mulan tuh aslinya imuttt bangettt, kalau lagi diluar aja dia kayak cool gituuu, padhaal aslinya dia tuuu omaygattt gemesin bangettttt aaaa" },
+    independent: { title: "Independent 💪", text: "Mulan orangnya tuh mandiri bangett, dia udah bisa ngekos sendiri dan selalu punya planning tanpa harus dibantu orang lain, dia keren banget uda bisa ngurus dirinya sendiri di luar provinsinya, wlau sekarang udah balik ke provinsinya lagi hahaha" },
+    disciplined: { title: "Disciplined ⏳", text: "Mulan kalau udah soal fokus ke 1 hal dia pasti bakal tekun banget, tapi dia ngerendah terosss, contohnya aja pas mau ujian, dia selalu bilang ga belajar tapi nyatanya pas malam dia belajarnya serius dan lama banget dan akhirnya dia dapet ipk 4.00" },
+    thrifty: { title: "Thrifty 💰", text: "emm.....kayanya kalo ini agaakk....ehehhe ytta deh" },
+    kindhearted: { title: "Kindhearted ✨", text: "wuohhh kalo ini dia emang paling paling, sumpah banyak banget yg dia gasengaja cerita dan dia nganggap itu biasa aja, padahal itu yang dia lakuin tuh baik banget, itulah kenapa aku cinta banget sama mulan hihihihi" },
+    caring: { title: "Caring 🌸", text: "Apalagi ini, dia selalu peduli ke orang sekitarnya dulu dibanding dia sendiri, kadang aga kesel kalau dia udah ga mikirin diri sendir,  pasti kalau mulan baca ini langsung sok mikir 'hah emang aku gitu'" },
 
-    dzaki: { title: "Dzaki", text: "Dzaki itu orang yang paling spesial buat Mulan.", link: "" },
-    hongtang: { title: "Hong Tang", text: "Dessert favorit yang gak pernah gagal bikin mood balik!", link: "" },
+    dzaki: { title: "Bang Zeker", text: "Bang zeker wajib jadi orang yang paling di favoritin sama mulann hehhehehe, sorry npd", link: "" },
+    hongtang: { title: "Hong Tang", text: "Mulan gila banget sama hong tang gatau kenapa, jadi pengen nyobain ajaajjaakajka when yah", link: "" },
     horror: { title: "Horror Movie", text: "Nonton film horror sambil sembunyi di balik bantal.", link: "" },
     money: { title: "Money", text: "Masa depan cerah dimulai dari rajin menabung!", link: "" },
-    travel: { title: "Travel", text: "Healing terbaik adalah melihat dunia luar.", link: "" },
+    travel: { title: "Travelling", text: "Healing terbaik adalah melihat dunia luar.", link: "" },
     mercy: { title: "Mercy G Class", text: "Mobil impian Mulan, semoga segera terwujud!", link: "" },
-    donut: { title: "Donut", text: "Donut paling enak sejagat raya!", link: "" },
+    donut: { title: "Durian", text: "Donut paling enak sejagat raya!", link: "" },
     baking: { title: "Baking", text: "Kue bikinan Mulan selalu yang termanis.", link: "" },
 
     movie1: { title: "Movie 1", text: "Kenangan film 1...", link: "" },
@@ -185,4 +185,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
