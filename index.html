@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -16,15 +17,29 @@
         <button id="musicToggle" class="music-btn">🎵 Play Music</button>
     </div>
 
-    <header class="hero fade-in">
-        <div class="hero-content">
-            <div class="profile-img-container">
+    <header class="hero fade-in" id="hero-section">
+        <div class="hero-content" id="hero-content">
+            <div class="profile-img-container" onclick="toggleBiodata()">
                 <img src="foto-profil.jpg" alt="Foto Mulan" class="profile-img">
             </div>
-            <h1>Mulan</h1>
-            <p class="subtitle">"A gentle soul with a beautiful heart"</p>
-            <a href="#kepribadian" class="scroll-down">↓</a>
+            <div class="hero-text-wrapper">
+                <div id="hero-main-titles">
+                    <h1>Mulan</h1>
+                    <p class="subtitle">"A gentle soul with a beautiful heart"</p>
+                </div>
+                <div id="mulan-biodata" class="hidden-biodata">
+                    <h2>About Mulan</h2>
+                    <ul class="bio-list">
+                        <li><strong>Nama:</strong> Mulan Agnesia</li>
+                        <li><strong>Hobi:</strong> Baking & Roblox</li>
+                        <li><strong>Favorite:</strong> Hong Tang</li>
+                        <li><strong>Dream:</strong> Mercy G-Class</li>
+                    </ul>
+                    <p class="bio-quote">"Tetap gemoy dan bahagia setiap hari!"</p>
+                </div>
+            </div>
         </div>
+        <a href="#kepribadian" class="scroll-down">↓</a>
     </header>
 
     <section id="kepribadian" class="section">
@@ -48,6 +63,7 @@
             <span class="close-btn" onclick="closePopup()">×</span>
             <h2 id="popup-title"></h2>
             <p id="popup-text"></p>
+            <a id="popup-link" href="#" target="_blank" class="trailer-btn">Lihat Selengkapnya 🎬</a>
         </div>
     </div>
 
@@ -61,7 +77,7 @@
                 <div class="photo-frame" onclick="openPopup('money')"><img src="money.jpg" alt="Money"><p class="caption">Money</p></div>
                 <div class="photo-frame" onclick="openPopup('travel')"><img src="travel.jpg" alt="Travel"><p class="caption">Travel</p></div>
                 <div class="photo-frame" onclick="openPopup('mercy')"><img src="mercy.jpg" alt="Mercy"><p class="caption">Mercy</p></div>
-                <div class="photo-frame" onclick="openPopup('donut')"><img src="donut.jpg" alt="Donut"><p class="caption">Durian</p></div>
+                <div class="photo-frame" onclick="openPopup('donut')"><img src="donut.jpg" alt="Donut"><p class="caption">Donut</p></div>
                 <div class="photo-frame" onclick="openPopup('baking')"><img src="baking.jpg" alt="Baking"><p class="caption">Baking</p></div>
             </div>
         </div>
@@ -92,23 +108,33 @@
             <h2 class="section-title">Love Letter</h2>
             <div class="moment-grid">
                 <div class="moment-item">
-                    <a href="https://dzaki-it.github.io/love-letter/" target="_blank" class="moment-bubble letter-icon"><img src="letter.png"></a>
+                    <a href="https://dzaki-it.github.io/love-letter/" target="_blank" class="moment-bubble letter-icon">
+                        <img src="letter.png" alt="Letter 1">
+                    </a>
                     <p class="caption">Letter 1</p>
                 </div>
                 <div class="moment-item">
-                    <a href="https://dzaki-it.github.io/love-letter2/" target="_blank" class="moment-bubble letter-icon"><img src="letter.png"></a>
+                    <a href="https://dzaki-it.github.io/love-letter2/" target="_blank" class="moment-bubble letter-icon">
+                        <img src="letter.png" alt="Letter 2">
+                    </a>
                     <p class="caption">Letter 2</p>
                 </div>
                 <div class="moment-item">
-                    <a href="https://dzaki-it.github.io/love-letter3/" target="_blank" class="moment-bubble letter-icon"><img src="letter.png"></a>
+                    <a href="https://dzaki-it.github.io/love-letter3/" target="_blank" class="moment-bubble letter-icon">
+                        <img src="letter.png" alt="Letter 3">
+                    </a>
                     <p class="caption">Letter 3</p>
                 </div>
                 <div class="moment-item">
-                    <a href="https://dzaki-it.github.io/love-letter4/" target="_blank" class="moment-bubble letter-icon"><img src="letter.png"></a>
+                    <a href="https://dzaki-it.github.io/love-letter4/" target="_blank" class="moment-bubble letter-icon">
+                        <img src="letter.png" alt="Letter 4">
+                    </a>
                     <p class="caption">Letter 4</p>
                 </div>
                 <div class="moment-item">
-                    <a href="https://dzaki-it.github.io/love-letter5/" target="_blank" class="moment-bubble letter-icon"><img src="letter.png"></a>
+                    <a href="https://dzaki-it.github.io/love-letter5/" target="_blank" class="moment-bubble letter-icon">
+                        <img src="letter.png" alt="Letter 5">
+                    </a>
                     <p class="caption">Letter 5</p>
                 </div>
             </div>
@@ -121,7 +147,7 @@
             <div class="social-links">
                 <a href="https://www.instagram.com/mulan.agnsiaa?igsh=dmQzdHJja3RxbW5j" target="_blank" class="social-icon ig"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
                 <a href="https://www.tiktok.com/@mln.agn?_r=1&_t=ZS-93gT6PWLrWr" target="_blank" class="social-icon tiktok"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
-                <a href="http://spotify.com" target="_blank" class="social-icon spotify"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png"></a>
+                <a href="https://open.spotify.com/playlist/4DM0ko8ZGYNn7fD3XXqmub?si=d31608666d124b45" target="_blank" class="social-icon spotify"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png"></a>
             </div>
         </div>
     </section>
