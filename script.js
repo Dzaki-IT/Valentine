@@ -2,8 +2,8 @@
 // 1. DATA MASTER (Main & Movies 1-51)
 // ==========================================
 const kataMulan = {
-    beautiful: { title: "Beautiful ❤️", text: "Kecantikanmu abadi, memancar dari hati yang tulus." },
-    smart: { title: "Smart 🧠", text: "Aku selalu kagum dengan caramu memahami banyak hal." },
+    beautiful: { title: "Beautiful ❤️", text: "Kenapa beautiful? YA KARENA MULAN ITU EMANG SECANTIK ITU WOIII, semua orang yg papasan dijalan sama di apasti langsung jatuh cinta semua karena emang dis ecantik itu melebihi artis manapun, bahkan han so hee aja kalah cantik bruh" },
+    smart: { title: "Smart 🧠", text: "Kenapa dia smart? YA BAYANGIN AJA BRUH, dia selalu OSN dan selalu masuk tingkat provinsi, dan lagi dia utbk terus dapet di UNSRI im so proud, " },
     adorable: { title: "Adorable 🎀", text: "Tingkahmu selalu sukses bikin hari-hari lebih ceria!" },
     independent: { title: "Independent 💪", text: "Wanita hebat yang punya prinsip. Keren banget!" },
     disciplined: { title: "Disciplined ⏳", text: "Kamu sangat menghargai waktu dan konsisten. Hebat!" },
@@ -185,3 +185,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
